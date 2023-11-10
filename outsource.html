@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Аутсорсинг ВЭД</title>
+    <link rel="stylesheet" href="css/outsource.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="full-width-wrapper">
+        <div class="callback__popup" id="callback__popup">
+          <div class="callback__popup__background"></div>
+
+          <div class="callback-form">
+            <div class="callback-close" id="callback_close">
+              <svg
+                width="44"
+                height="44"
+                viewBox="0 0 44 44"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M31.7313 12.2687C31.373 11.9104 30.7921 11.9104 30.4338 12.2687L22 20.7025L13.5662 12.2687C13.2079 11.9104 12.627 11.9104 12.2687 12.2687C11.9104 12.627 11.9104 13.2079 12.2687 13.5662L20.7025 22L12.2687 30.4338C11.9104 30.7921 11.9104 31.373 12.2687 31.7313C12.627 32.0896 13.2079 32.0896 13.5662 31.7313L22 23.2975L30.4338 31.7313C30.7921 32.0896 31.373 32.0896 31.7313 31.7313C32.0896 31.373 32.0896 30.7921 31.7313 30.4338L23.2975 22L31.7313 13.5662C32.0896 13.2079 32.0896 12.627 31.7313 12.2687Z"
+                  fill="#D9E1EC"
+                />
+              </svg>
+            </div>
+            <div class="callback__popup__success" id="callback__success">
+              <h3 class="yellow">Ваша заявка успешно отправлена!</h3>
+              <span
+                >Ваша заявка успешно отправлена. Наши специалисты свяжутся с
+                Вами в течении 15 минут!</span
+              >
+            </div>
+            <div class="callback-form__content">
+              <h2>Остались вопросы? Напишите нам</h2>
+              <form action="" method="post">
+                <input type="text" placeholder="Имя" />
+                <input type="phone" placeholder="Телефон" />
+                <span>
+                  Нажимая кнопку вы даете согласие на обработку
+                  <a href="#" class="yellow">персональных данных</a></span
+                >
+                <button class="btn__submit" type="submit" id="callback__submit">
+                  Перезвонить мне
+                </button>
+              </form>
+              <div class="social__links">
+                <a href="#" class="telegram">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Frame 1">
+                      <path
+                        id="Vector"
+                        d="M1.02438 10.4311L20.5348 3.08985C21.4403 2.77059 22.2312 3.30543 21.9378 4.64169L21.9395 4.64005L18.6175 19.9133C18.3713 20.9961 17.7119 21.2594 16.7895 20.7493L11.7307 17.1107L9.29059 19.4048C9.02079 19.6681 8.79314 19.8902 8.27038 19.8902L8.62957 14.8661L18.0054 6.60001C18.4134 6.24949 17.9143 6.05201 17.3764 6.40089L5.78985 13.5199L0.795043 11.9994C-0.289244 11.6637 -0.312852 10.9412 1.02438 10.4311Z"
+                        fill="#D9E1EC"
+                      />
+                    </g>
+                  </svg>
+                </a>
+                <a href="#" class="whatsapp"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M19.7 4.1625C17.6375 2.1 14.8875 1 12 1C5.95 1 1 5.95 1 12C1 13.925 1.55001 15.85 2.51251 17.5L1 23L6.77502 21.4875C8.42502 22.3125 10.2125 22.8625 12 22.8625C18.05 22.8625 23 17.9125 23 11.8625C23 8.975 21.7625 6.225 19.7 4.1625ZM12 21.075C10.35 21.075 8.70001 20.6625 7.32501 19.8375L7.04999 19.7L3.61249 20.6625L4.57501 17.3625L4.29999 16.95C3.33749 15.4375 2.92499 13.7875 2.92499 12.1375C2.92499 7.1875 7.05 3.0625 12 3.0625C14.475 3.0625 16.675 4.025 18.4625 5.675C20.25 7.4625 21.075 9.6625 21.075 12.1375C21.075 16.95 17.0875 21.075 12 21.075ZM16.95 14.2C16.675 14.0625 15.3 13.375 15.025 13.375C14.75 13.2375 14.6125 13.2375 14.475 13.5125C14.3375 13.7875 13.7875 14.3375 13.65 14.6125C13.5125 14.75 13.375 14.75 13.1 14.75C12.825 14.6125 12 14.3375 10.9 13.375C10.075 12.6875 9.52501 11.725 9.38751 11.45C9.25001 11.175 9.38752 11.0375 9.52502 10.9C9.66252 10.7625 9.8 10.625 9.9375 10.4875C10.075 10.35 10.075 10.2125 10.2125 10.075C10.35 9.9375 10.2125 9.8 10.2125 9.6625C10.2125 9.525 9.66251 8.15 9.38751 7.6C9.25001 7.1875 8.97502 7.1875 8.83752 7.1875C8.70002 7.1875 8.56248 7.1875 8.28748 7.1875C8.14998 7.1875 7.87498 7.1875 7.59998 7.4625C7.32498 7.7375 6.63751 8.425 6.63751 9.8C6.63751 11.175 7.59999 12.4125 7.73749 12.6875C7.87499 12.825 9.66248 15.7125 12.4125 16.8125C14.75 17.775 15.1625 17.5 15.7125 17.5C16.2625 17.5 17.3625 16.8125 17.5 16.2625C17.775 15.575 17.775 15.025 17.6375 15.025C17.5 14.3375 17.225 14.3375 16.95 14.2Z"
+                      fill="#D9E1EC"
+                    /></svg
+                ></a>
+                <a href="#" class="vk"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.0225 20.5C5.16434 20.5 0.683816 14.8795 0.5 5.51201H4.45205C4.57842 12.3815 7.47353 15.2878 9.77123 15.8883V5.51201H13.482V11.4327C15.7453 11.1805 18.1349 8.47838 18.9391 5.5H22.6384C22.3367 7.04175 21.7342 8.50192 20.8684 9.78927C20.0026 11.0766 18.8921 12.1635 17.6064 12.982C19.0412 13.7285 20.3084 14.7846 21.3243 16.0805C22.3401 17.3763 23.0817 18.8826 23.5 20.5H19.4216C18.5485 17.6537 16.3656 15.444 13.482 15.1437V20.5H13.034H13.0225Z"
+                      fill="#D9E1EC"
+                    /></svg
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="width-wrapper">
+          <ul class="header__layout">
+            <li class="bx-menu" id="site_menu_open">
+              <img src="img/menu.svg" alt="" />
+            </li>
+            <li class="site-logo">
+              <a href="/"
+                ><img src="img/logo.svg" alt="Логотип Ваш Логист"
+              /></a>
+            </li>
+            <li class="header__layout-nav" id="header__submenu">
+              <div class="bx-close" id="bx_close">
+                <svg
+                  width="44"
+                  height="44"
+                  viewBox="0 0 44 44"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M31.7313 12.2687C31.373 11.9104 30.7921 11.9104 30.4338 12.2687L22 20.7025L13.5662 12.2687C13.2079 11.9104 12.627 11.9104 12.2687 12.2687C11.9104 12.627 11.9104 13.2079 12.2687 13.5662L20.7025 22L12.2687 30.4338C11.9104 30.7921 11.9104 31.373 12.2687 31.7313C12.627 32.0896 13.2079 32.0896 13.5662 31.7313L22 23.2975L30.4338 31.7313C30.7921 32.0896 31.373 32.0896 31.7313 31.7313C32.0896 31.373 32.0896 30.7921 31.7313 30.4338L23.2975 22L31.7313 13.5662C32.0896 13.2079 32.0896 12.627 31.7313 12.2687Z"
+                    fill="#D9E1EC"
+                  />
+                </svg>
+              </div>
+              <ul>
+                <li id="submenu__header">
+                  <div>
+                    <a href="#" id="submenu__title">О нас</a>
+                    <img
+                      src="img/dropdown-arrow.svg"
+                      alt=""
+                      id="submenu__arrow"
+                    />
+                  </div>
+
+                  <div
+                    class="header__layout-nav__dropdown"
+                    id="submenu__dropdown"
+                  >
+                    <ul class="header__layout-nav__dropdown-content">
+                      <li><a href="#">Пункт меню</a></li>
+                      <li>
+                        <a href="#">Еще какой-то пункт меню</a>
+                      </li>
+                      <li><a href="#">Еще один пункт</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <a href="#">Услуги</a>
+                    <img src="img/dropdown-arrow.svg" alt="" />
+                  </div>
+                </li>
+                <li><a href="#">Калькулятор</a></li>
+                <li><a href="#">Кейсы</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+              <div class="social__links">
+                <a href="#" class="telegram">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Frame 1">
+                      <path
+                        id="Vector"
+                        d="M1.02438 10.4311L20.5348 3.08985C21.4403 2.77059 22.2312 3.30543 21.9378 4.64169L21.9395 4.64005L18.6175 19.9133C18.3713 20.9961 17.7119 21.2594 16.7895 20.7493L11.7307 17.1107L9.29059 19.4048C9.02079 19.6681 8.79314 19.8902 8.27038 19.8902L8.62957 14.8661L18.0054 6.60001C18.4134 6.24949 17.9143 6.05201 17.3764 6.40089L5.78985 13.5199L0.795043 11.9994C-0.289244 11.6637 -0.312852 10.9412 1.02438 10.4311Z"
+                        fill="#D9E1EC"
+                      />
+                    </g>
+                  </svg>
+                </a>
+                <a href="#" class="whatsapp"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M19.7 4.1625C17.6375 2.1 14.8875 1 12 1C5.95 1 1 5.95 1 12C1 13.925 1.55001 15.85 2.51251 17.5L1 23L6.77502 21.4875C8.42502 22.3125 10.2125 22.8625 12 22.8625C18.05 22.8625 23 17.9125 23 11.8625C23 8.975 21.7625 6.225 19.7 4.1625ZM12 21.075C10.35 21.075 8.70001 20.6625 7.32501 19.8375L7.04999 19.7L3.61249 20.6625L4.57501 17.3625L4.29999 16.95C3.33749 15.4375 2.92499 13.7875 2.92499 12.1375C2.92499 7.1875 7.05 3.0625 12 3.0625C14.475 3.0625 16.675 4.025 18.4625 5.675C20.25 7.4625 21.075 9.6625 21.075 12.1375C21.075 16.95 17.0875 21.075 12 21.075ZM16.95 14.2C16.675 14.0625 15.3 13.375 15.025 13.375C14.75 13.2375 14.6125 13.2375 14.475 13.5125C14.3375 13.7875 13.7875 14.3375 13.65 14.6125C13.5125 14.75 13.375 14.75 13.1 14.75C12.825 14.6125 12 14.3375 10.9 13.375C10.075 12.6875 9.52501 11.725 9.38751 11.45C9.25001 11.175 9.38752 11.0375 9.52502 10.9C9.66252 10.7625 9.8 10.625 9.9375 10.4875C10.075 10.35 10.075 10.2125 10.2125 10.075C10.35 9.9375 10.2125 9.8 10.2125 9.6625C10.2125 9.525 9.66251 8.15 9.38751 7.6C9.25001 7.1875 8.97502 7.1875 8.83752 7.1875C8.70002 7.1875 8.56248 7.1875 8.28748 7.1875C8.14998 7.1875 7.87498 7.1875 7.59998 7.4625C7.32498 7.7375 6.63751 8.425 6.63751 9.8C6.63751 11.175 7.59999 12.4125 7.73749 12.6875C7.87499 12.825 9.66248 15.7125 12.4125 16.8125C14.75 17.775 15.1625 17.5 15.7125 17.5C16.2625 17.5 17.3625 16.8125 17.5 16.2625C17.775 15.575 17.775 15.025 17.6375 15.025C17.5 14.3375 17.225 14.3375 16.95 14.2Z"
+                      fill="#D9E1EC"
+                    /></svg
+                ></a>
+                <a href="#" class="vk"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.0225 20.5C5.16434 20.5 0.683816 14.8795 0.5 5.51201H4.45205C4.57842 12.3815 7.47353 15.2878 9.77123 15.8883V5.51201H13.482V11.4327C15.7453 11.1805 18.1349 8.47838 18.9391 5.5H22.6384C22.3367 7.04175 21.7342 8.50192 20.8684 9.78927C20.0026 11.0766 18.8921 12.1635 17.6064 12.982C19.0412 13.7285 20.3084 14.7846 21.3243 16.0805C22.3401 17.3763 23.0817 18.8826 23.5 20.5H19.4216C18.5485 17.6537 16.3656 15.444 13.482 15.1437V20.5H13.034H13.0225Z"
+                      fill="#D9E1EC"
+                    /></svg
+                ></a>
+              </div>
+            </li>
+            <li class="header__layout-phone" id="callback_open">
+              <a href="#">
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="Phone">
+                    <path
+                      id="Vector (Stroke)"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.2678 3.66195C12.2155 3.64006 12.1597 3.63021 12.1041 3.63288C12.0484 3.63556 11.9941 3.6507 11.9444 3.67722C11.8965 3.70286 11.8538 3.73862 11.8191 3.78235C10.5642 5.46135 9.69328 7.43613 9.2769 9.54734L9.27509 9.55649C8.87562 11.4981 8.87739 13.5118 9.28052 15.4547L9.28251 15.4643C9.70005 17.5676 10.568 19.5374 11.817 21.2158C11.8524 21.2601 11.8957 21.2963 11.9443 21.3223C11.9947 21.3492 12.0497 21.3645 12.1056 21.3671C12.1615 21.3698 12.2172 21.3598 12.269 21.338C12.3208 21.3161 12.3676 21.2829 12.4067 21.2404L12.4095 21.2374L13.8823 19.6484C13.8881 19.6421 13.894 19.636 13.8999 19.6299C13.9706 19.5573 14.0143 19.4589 14.0223 19.3532C14.0303 19.2484 14.0026 19.1436 13.9441 19.0584C13.4902 18.4195 13.1045 17.7276 12.7943 16.9957L12.7933 16.9933C12.7613 16.9174 12.7098 16.8528 12.6449 16.8073C12.5805 16.7622 12.5058 16.738 12.4296 16.737L11.185 16.7357C10.7408 16.7352 10.3515 16.4151 10.2333 15.9531C9.65341 13.6856 9.65113 11.2922 10.227 9.02544C10.3448 8.56184 10.7356 8.24059 11.1811 8.24107L12.4257 8.2424C12.5018 8.24163 12.5758 8.21755 12.6392 8.17324C12.7032 8.12856 12.7539 8.06503 12.7853 7.99006L12.7863 7.98772C13.0953 7.25621 13.4799 6.56479 13.9327 5.92658C13.9896 5.84373 14.0171 5.74116 14.0098 5.63733C14.0023 5.53229 13.9597 5.43323 13.8895 5.35892L13.8825 5.35159L12.4075 3.76014C12.4074 3.76007 12.4075 3.76021 12.4075 3.76014C12.3677 3.71737 12.32 3.68381 12.2678 3.66195ZM12.0161 1.50255C12.3459 1.48668 12.6752 1.5451 12.9829 1.67396C13.2906 1.80281 13.5702 1.99929 13.8038 2.25085L15.2772 3.84045C15.6868 4.27574 15.9369 4.85639 15.9806 5.47519C16.0245 6.09601 15.8577 6.71298 15.5107 7.21081L15.5052 7.21873C15.1416 7.73049 14.8328 8.28509 14.5849 8.87202L13.6856 8.42987L14.5859 8.86968C14.3983 9.31668 14.0957 9.69611 13.7139 9.96293C13.3322 10.2297 12.8876 10.3726 12.4329 10.3748L12.4274 10.3749L11.9624 10.3744C11.7087 11.7704 11.7103 13.2073 11.9671 14.6041L12.4407 14.6046C12.8954 14.6078 13.3396 14.7516 13.7209 15.0186C14.1018 15.2853 14.4041 15.6639 14.5922 16.1098C14.8413 16.6972 15.1511 17.2526 15.5157 17.7652L15.5211 17.7728C15.872 18.2754 16.0398 18.8995 15.9923 19.5268C15.9452 20.1491 15.6893 20.7314 15.2725 21.1644L13.81 22.7422C13.8095 22.7428 13.8089 22.7433 13.8084 22.7439C13.5754 22.9968 13.2961 23.1944 12.9883 23.3242C12.6798 23.4543 12.3495 23.5132 12.0186 23.4975C11.6878 23.4818 11.3637 23.3917 11.067 23.2332C10.7703 23.0746 10.5075 22.8511 10.2953 22.5768L10.284 22.5619C8.83876 20.6234 7.83408 18.3471 7.35069 15.9157C6.88555 13.6706 6.88339 11.3434 7.34452 9.09894C7.82663 6.65804 8.83483 4.37481 10.2877 2.43411L10.2975 2.42116C10.509 2.14751 10.7711 1.92452 11.0671 1.76636C11.363 1.60821 11.6862 1.51841 12.0161 1.50255Z"
+                      fill="#FDD548"
+                    />
+                  </g>
+                </svg>
+                <div class="header__layout-phone__content">
+                  <span>8 800 544 40 15</span>
+                  <span>Заказать звонок</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="page__heading">
+        <div class="full-width-wrapper">
+          <img
+            src="img/about__map.png"
+            alt=""
+            class="page__heading__background"
+          />
+          <div class="width-wrapper">
+            <div class="chat-bot">
+              <a href="#">
+                <img class="chat-bot__img" src="img/chat_bot__background.png" />
+                <div>
+                  <img src="img/chat-bot.svg" alt="" />
+                  <span>Чат бот</span>
+                </div>
+              </a>
+            </div>
+            <div class="page__heading__layout">
+              <div class="page__breadcrumb">
+                <a href="#">Главная</a>
+                <span></span>
+                <a href="#">При наведении</a>
+                <span></span>
+                <a href="#">На странице</a>
+              </div>
+
+              <div class="page__heading__layout__heading">
+                <div class="page__heading__layout__heading__text">
+                  <h2 class="section__title">
+                    Ваш путеводитель в мире логистики и ВЭД
+                  </h2>
+                  <span class="page__text"
+                    >Комплексные услуги по доставке и таможенному оформлению
+                    импортных грузов из стран Азии и Европы.
+                  </span>
+                  <a href="#calculator" class="detail-btn">
+                    <span>Рассчитать стоимость</span>
+                  </a>
+                </div>
+                <div class="page__heading__btn">
+                  <img src="img/outsource-man.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="numbers">
+        <div class="full-width-wrapper">
+          <div class="numbers-background"></div>
+          <div class="width-wrapper">
+            <div class="numbers__layout">
+              <ul class="number__layout__transportation">
+                <li class="number__layout__transport">
+                  <img src="img/auto.svg" alt="" />
+                  <span>Автоперевозки</span>
+                </li>
+                <li class="number__layout__transport">
+                  <img src="img/ship.svg" alt="" />
+                  <span>Морские перевозки </span>
+                </li>
+                <li class="number__layout__transport">
+                  <img src="img/plane.svg" alt="" />
+                  <span>Авиаперевозки</span>
+                </li>
+                <li class="number__layout__transport">
+                  <img src="img/train.svg" alt="" />
+                  <span>Ж/Д перевозки </span>
+                </li>
+              </ul>
+              <ul class="numbers__layout__info">
+                <li class="numbers__layout__info__item">
+                  <div>
+                    <h4>18 лет</h4>
+                  </div>
+                  <span>Работаем с 2005 года</span>
+                </li>
+                <li class="numbers__layout__info__item">
+                  <div>
+                    <h4>28 000</h4>
+                  </div>
+                  <span>Контейнеров отгружено</span>
+                </li>
+                <li class="numbers__layout__info__item">
+                  <div>
+                    <h4>500</h4>
+                  </div>
+                  <span>Более 500 Довольных клиентов</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="clients">
+        <div class="full-width-wrapper">
+          <div class="width-wrapper">
+            <div class="clients__layout">
+              <h2 class="section-wrapper-title">Кто наши клиенты</h2>
+              <div class="clients__layout__items">
+                <div class="clients__layout__item">
+                  <img src="img/food-blue.svg" alt="" />
+                  <span>Пищевые производства</span>
+                </div>
+                <div class="clients__layout__item">
+                  <img src="img/customers-blue.svg" alt="" />
+                  <span>Селлеры маркетплэйсов</span>
+                </div>
+                <div class="clients__layout__item">
+                  <img src="img/medic-blue.svg" alt="" />
+                  <span>Медицинское оборудование</span>
+                </div>
+                <div class="clients__layout__item">
+                  <img src="img/gas-blue.svg" alt="" />
+                  <span>Нефтегазовый комплекс</span>
+                </div>
+                <div class="clients__layout__item">
+                  <img src="img/crowd-blue.svg" alt="" />
+                  <span>Физические лица</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stages">
+        <div class="full-width-wrapper">
+          <div class="width-wrapper">
+            <div class="stages__layout">
+              <h2 class="section__title">Этапы работ</h2>
+              <ul class="stages__layout__items">
+                <li class="stages__layout__item">
+                  <div class="stages__layout__item__counter">1</div>
+                  <div class="stages__layout__item__wrapper">
+                    <img src="img/stage-contract.svg" alt="" />
+                    <span
+                      >Начало сотрудничества с клиентом: заключение договора
+                      поставки товара</span
+                    >
+                  </div>
+                </li>
+                <li class="stages__layout__item">
+                  <div class="stages__layout__item__counter">2</div>
+                  <div class="stages__layout__item__wrapper">
+                    <img src="img/stage-world.svg" alt="" />
+                    <span
+                      >Поиск поставщика и заключение контракта на поставку
+                      товара</span
+                    >
+                  </div>
+                </li>
+                <li class="stages__layout__item">
+                  <div class="stages__layout__item__counter">3</div>
+                  <div class="stages__layout__item__wrapper">
+                    <img src="img/stage-delivery.svg" alt="" />
+                    <span
+                      >Эффективная организация логистики: от покупки до доставки
+                      на границу РФ</span
+                    >
+                  </div>
+                </li>
+                <li class="stages__layout__item">
+                  <div class="stages__layout__item__counter">4</div>
+                  <div class="stages__layout__item__wrapper">
+                    <img src="img/opacity.svg" alt="" />
+                    <span
+                      >Гарантированная прозрачность: таможенная очистка,
+                      доставка и предоставление необходимых документов</span
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantage">
+        <div class="full-width-wrapper">
+          <div class="width-wrapper">
+            <div class="advantage__layout">
+              <div class="advantage__layout__title">
+                <div class="advantage__layout__title__content">
+                  <h2 class="section__title">Преимущества</h2>
+                  <span>
+                    Агентируем, сопровождаем любые сделки на территории Китая,
+                    Кореи, Японии. Работаем с группами санкционных товаров.
+                    Оказываем широкий спектр сопутствующих услуг.</span
+                  >
+                </div>
+                <img src="img/man.svg" alt="" />
+              </div>
+
+              <div class="advantage__layout__content">
+                <ul class="advantage__layout__items">
+                  <li class="advantage__layout__item">
+                    <img src="img/brain.svg" alt="" />
+                    <h4>Экономия времени и сил</h4>
+                    <span
+                      >Вы можете поручить нам решение самых сложных задач.&nbsp;
+                      Берём на себя ваши проблемы и боли. Оказываем услуги
+                      страхование груза, гарантируем сохранность груза и
+                      безопасность доставки.</span
+                    >
+                  </li>
+                  <li class="advantage__layout__item">
+                    <img src="img/individual.svg" alt="" />
+                    <h4>Индивидуальный подход</h4>
+                    <span
+                      >Гибкий подход в решении сложных задач. Оперативная
+                      система отслеживания заказов.</span
+                    >
+                  </li>
+                  <li class="advantage__layout__item">
+                    <img src="img/service.svg" alt="" />
+                    <h4>Полный комплекс услуг</h4>
+                    <span
+                      >Обеспечиваем полное сопровождение внешнеэкономической
+                      деятельности. Предоставляем консультирование по услугам в
+                      банковском секторе, оказываем профессиональное услуги по
+                      составлению внешнеторговых контрактов.</span
+                    >
+                  </li>
+                  <li class="advantage__layout__item">
+                    <img src="img/wallet.svg" alt="" />
+                    <h4>Сокращение расходов</h4>
+                    <span
+                      >Подбираем оптимальные маршруты, оптимизируем
+                      логистические схемы. У нас прямые контакты с
+                      крупнейшими&nbsp; контейнерными судоходными линиями,
+                      заводами и производствами в Юго-Восточной Азии, Америки и
+                      Европы.</span
+                    >
+                  </li>
+                </ul>
+                <img src="img/man.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="SEO-text">
+        <div class="full-width-wrapper">
+          <div class="width-wrapper">
+            <div class="SEO-text__layout">
+              <h2 class="section__title">Что входит в услугу</h2>
+              <span class="page__text">
+                Заказать фулфилмент для маркетплейсов у компании "Ваш Логист" –
+                значит получить надежного и ответственного партнера, который
+                обеспечит эффективное выполнение всех этапов логистического
+                процесса: от приема и хранения товаров до их упаковки,
+                маркировки и доставки в пункты назначения в Москве. Оформление
+                заказа фулфилмент-услуг у нас просто и удобно. Маркетплейсы
+                могут заказать нужные услуги через форму заявки или обратиться к
+                специалистам компании по номеру телефона. Команда “Ваш Логист”
+                всегда готова предоставить комплексную поддержку и решить любые
+                вопросы, связанные с фулфилментом для маркетплейсов.
+              </span>
+              <ul class="SEO-text__include">
+                <li class="SEO-text__include__content">
+                  <h4>Что включает в себя ВЭД аутсорсинг при импорте:</h4>
+                  <ul>
+                    <li class="page__text">
+                      spanУстановление прямых контрактов с поставщиками
+                    </li>
+                    <li class="page__text">
+                      spanПеревод денежных средств за товар поставщику
+                    </li>
+                    <li class="page__text">
+                      spanОрганизация доставки товара из различных точек мира
+                    </li>
+                    <li>
+                      span Обеспечение выполнения всех необходимых импортных
+                      таможенных процедур и формальностей
+                    </li>
+                    <li class="page__text">
+                      Оплата платежей и сборов, связанных с таможенными
+                      процедурами
+                    </li>
+                    <li class="page__text">
+                      Получение всех необходимых разрешительных документов
+                    </li>
+                    <li class="page__text">
+                      Организация реализации товара на территории России в
+                      соответствии с договором купли-продажи.
+                    </li>
+                  </ul>
+                </li>
+                <li class="SEO-text__include__content">
+                  <h4>Что включает в себя ВЭД при экспорте:</h4>
+                  <ul>
+                    <li class="page__text">
+                      Установление прямых контрактных отношений с Покупателем
+                    </li>
+                    <li class="page__text">
+                      Получение платежей от Покупателя в иностранной валюте
+                    </li>
+                    <li class="page__text">
+                      Приобретение Товара на территории России на основании
+                      договора купли-продажи
+                    </li>
+                    <li class="page__text">
+                      Осуществление перевода денежных средств поставщику в обмен
+                      на поставленный товар
+                    </li>
+                    <li class="page__text">
+                      Соблюдение всех необходимых экспортных таможенных
+                      формальностей
+                    </li>
+                    <li class="page__text">
+                      Получение всех обязательных разрешительных документов
+                    </li>
+                    <li class="page__text">
+                      Организация транспортировки Товара в различные точки мира
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="free-consult-form">
+        <div class="full-width-wrapper">
+          <div class="width-wrapper">
+            <div class="free-consult-form__layout">
+              <div class="free-consult-form__layout__heading">
+                <h2 class="section-wrapper-title">
+                  Получить бесплатную консультацию
+                </h2>
+              </div>
+
+              <form
+                action=""
+                method="post"
+                class="free-consult-form__layout__form"
+              >
+                <ul class="free-consult-form__layout__form__inputs">
+                  <li>
+                    <label for="name" class="free-cosult-form__subheader"
+                      >Ваше имя</label
+                    >
+                    <input type="text" placeholder="Имя" id="name" />
+                  </li>
+                  <li>
+                    <label for="tel" class="free-cosult-form__subheader"
+                      >Ваш телефон</label
+                    >
+                    <input
+                      type="tel"
+                      placeholder="+7 (___) ___-__-__"
+                      id="tel"
+                    />
+                  </li>
+                  <li>
+                    <label for="email" class="free-cosult-form__subheader"
+                      >Почта</label
+                    >
+                    <input type="email" id="email" placeholder="Почта" />
+                  </li>
+                  <li>
+                    <label for="message" class="free-cosult-form__subheader"
+                      >Краткое сообщение
+                    </label>
+                    <textarea
+                      name=""
+                      placeholder="Сообщение"
+                      id="message"
+                    ></textarea>
+                  </li>
+                </ul>
+
+                <ul class="free-consult-form__layout__form__btns">
+                  <li>
+                    <input type="file" class="calculator__file" />
+                  </li>
+                  <li>
+                    <span
+                      >Нажимая кнопку вы даете согласие на обработку
+                      <a href="#" class="yellow">персональных данных</a>
+                    </span>
+                  </li>
+                  <li>
+                    <button
+                      type="submit"
+                      class="calculator-btn-submit"
+                      id="calculator__submit"
+                    >
+                      Рассчитать доставку
+                    </button>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="SEO-text">
+        <div class="full-width-wrapper">
+          <div class="width-wrapper">
+            <div class="SEO-text__layout">
+              <h2 class="section__title">СОЕ текст для продвижения</h2>
+              <span class="page__text">
+                Заказать фулфилмент для маркетплейсов у компании "Ваш Логист" –
+                значит получить надежного и ответственного партнера, который
+                обеспечит эффективное выполнение всех этапов логистического
+                процесса: от приема и хранения товаров до их упаковки,
+                маркировки и доставки в пункты назначения в Москве.Оформление
+                заказа фулфилмент-услуг у нас просто и удобно. Маркетплейсы
+                могут заказать нужные услуги через форму заявки или обратиться к
+                специалистам компании по номеру телефона. Команда “Ваш Логист”
+                всегда готова предоставить комплексную поддержку и решить любые
+                вопросы, связанные с фулфилментом для маркетплейсов.<br /><br />
+
+                С момента создания компании Ваш Логист предлагает услуги,
+                основанные на комплексном и беспрепятственном подходе к
+                внутрироссийским и международным логистическим решениям
+                посредством современных технологий и инноваций. Наши возможности
+                в области логистики основаны на процессе «от начала до конца»,
+                что дает нам возможность быть экспертами в продуктах и
+                ​​услугах, которые мы предлагаем.<br /><br />
+
+                Мы предлагаем полный спектр услуг, связанных с автомобильными,
+                морскими, ж/д перевозками, авиаперевозками, складированием и
+                таможенным оформлением.<br /><br />
+
+                Ваш Логист гордится своими сотрудниками, которые имеют богатый
+                опыт во всех видах международных экспедиторских услуг, включая
+                авиаперевозки, автомобильные перевозки, морские контейнерные
+                перевозки, знают все аспекты таможенного оформления, правила
+                перевозки опасных грузов, замороженных или охлажденных,
+                скоропортящихся грузов.<br /><br />
+
+                Пожалуйста, не стесняйтесь обращаться к нам, чтобы обсудить ваши
+                потребности в перевозке и узнать оптимальную логистическую схему
+                с учетом ваших пожеланий по срокам и виду транспорта.<br /><br />
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="geography">
+        <div class="full-width-wrapper">
+          <div class="width-wrapper">
+            <div class="geography__layout">
+              <h2 class="section__title">География компании</h2>
+              <img
+                src="img/geography__map.png"
+                alt=""
+                class="geography-map__desktop"
+              />
+              <img
+                src="img/map__desktop-small.png"
+                class="geography-map__desktop-small"
+                alt=""
+              />
+              <img
+                src="img/map__mobile-big.png"
+                class="geography-map__mobile-big"
+                alt=""
+              />
+              <img
+                src="img/map__mobile-2.svg"
+                alt=""
+                class="geography-map__mobile"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="full-width-wrapper">
+          <div class="width-wrapper">
+            <div class="faq__layout">
+              <h2 class="section__title">Вопрос-ответ</h2>
+              <div class="faq__layout__content">
+                <div class="faq__layout-accordion">
+                  <div id="accordion" class="accordion">
+                    <div class="accordion__item">
+                      <div class="accordion__header">
+                        <span
+                          >Какие услуги предоставляет компания Ваш Логист?</span
+                        >
+                        <div class="plus">
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="7"
+                              width="2"
+                              height="16"
+                              rx="1"
+                              fill="#2B5EB5"
+                            />
+                            <rect
+                              x="16"
+                              y="7"
+                              width="2"
+                              height="16"
+                              rx="1"
+                              transform="rotate(90 16 7)"
+                              fill="#2B5EB5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="accordion__body">
+                        <div class="accordion__content">
+                          Обеспечиваем полное сопровождение внешнеэкономической
+                          деятельности. Предоставляем консультирование по
+                          услугам в банковском секторе, оказываем
+                          профессиональное услуги по составлению внешнеторговых
+                          контрактов.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion__item">
+                      <div class="accordion__header">
+                        <span>Какое время занимает доставка грузов?</span>
+                        <div class="plus">
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="7"
+                              width="2"
+                              height="16"
+                              rx="1"
+                              fill="#2B5EB5"
+                            />
+                            <rect
+                              x="16"
+                              y="7"
+                              width="2"
+                              height="16"
+                              rx="1"
+                              transform="rotate(90 16 7)"
+                              fill="#2B5EB5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="accordion__body">
+                        <div class="accordion__content">
+                          Обеспечиваем полное сопровождение внешнеэкономической
+                          деятельности. Предоставляем консультирование по
+                          услугам в банковском секторе, оказываем
+                          профессиональное услуги по составлению внешнеторговых
+                          контрактов.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion__item">
+                      <div class="accordion__header">
+                        <span
+                          >Какие гарантии дает компания в случае утери
+                          груза?</span
+                        >
+                        <div class="plus">
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="7"
+                              width="2"
+                              height="16"
+                              rx="1"
+                              fill="#2B5EB5"
+                            />
+                            <rect
+                              x="16"
+                              y="7"
+                              width="2"
+                              height="16"
+                              rx="1"
+                              transform="rotate(90 16 7)"
+                              fill="#2B5EB5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="accordion__body">
+                        <div class="accordion__content">
+                          Обеспечиваем полное сопровождение внешнеэкономической
+                          деятельности. Предоставляем консультирование по
+                          услугам в банковском секторе, оказываем
+                          профессиональное услуги по составлению внешнеторговых
+                          контрактов.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion__item">
+                      <div class="accordion__header">
+                        <span
+                          >Какие услуги предоставляет компания Ваш Логист?</span
+                        >
+                        <div class="plus">
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="7"
+                              width="2"
+                              height="16"
+                              rx="1"
+                              fill="#2B5EB5"
+                            />
+                            <rect
+                              x="16"
+                              y="7"
+                              width="2"
+                              height="16"
+                              rx="1"
+                              transform="rotate(90 16 7)"
+                              fill="#2B5EB5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="accordion__body">
+                        <div class="accordion__content">
+                          Обеспечиваем полное сопровождение внешнеэкономической
+                          деятельности. Предоставляем консультирование по
+                          услугам в банковском секторе, оказываем
+                          профессиональное услуги по составлению внешнеторговых
+                          контрактов.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion__item">
+                      <div class="accordion__header">
+                        <span>Какое время занимает доставка грузов?</span>
+                        <div class="plus">
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="7"
+                              width="2"
+                              height="16"
+                              rx="1"
+                              fill="#2B5EB5"
+                            />
+                            <rect
+                              x="16"
+                              y="7"
+                              width="2"
+                              height="16"
+                              rx="1"
+                              transform="rotate(90 16 7)"
+                              fill="#2B5EB5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="accordion__body">
+                        <div class="accordion__content">
+                          Обеспечиваем полное сопровождение внешнеэкономической
+                          деятельности. Предоставляем консультирование по
+                          услугам в банковском секторе, оказываем
+                          профессиональное услуги по составлению внешнеторговых
+                          контрактов.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion__item">
+                      <div class="accordion__header">
+                        <span
+                          >Какие гарантии дает компания в случае утери
+                          груза?</span
+                        >
+                        <div class="plus">
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="7"
+                              width="2"
+                              height="16"
+                              rx="1"
+                              fill="#2B5EB5"
+                            />
+                            <rect
+                              x="16"
+                              y="7"
+                              width="2"
+                              height="16"
+                              rx="1"
+                              transform="rotate(90 16 7)"
+                              fill="#2B5EB5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="accordion__body">
+                        <div class="accordion__content">
+                          Обеспечиваем полное сопровождение внешнеэкономической
+                          деятельности. Предоставляем консультирование по
+                          услугам в банковском секторе, оказываем
+                          профессиональное услуги по составлению внешнеторговых
+                          контрактов.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion__item">
+                      <div class="accordion__header">
+                        <span>Какое время занимает доставка грузов?</span>
+                        <div class="plus">
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="7"
+                              width="2"
+                              height="16"
+                              rx="1"
+                              fill="#2B5EB5"
+                            />
+                            <rect
+                              x="16"
+                              y="7"
+                              width="2"
+                              height="16"
+                              rx="1"
+                              transform="rotate(90 16 7)"
+                              fill="#2B5EB5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="accordion__body">
+                        <div class="accordion__content">
+                          Обеспечиваем полное сопровождение внешнеэкономической
+                          деятельности. Предоставляем консультирование по
+                          услугам в банковском секторе, оказываем
+                          профессиональное услуги по составлению внешнеторговых
+                          контрактов.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <aside class="callback-form">
+                  <div class="callback-form__heading">
+                    <h2 class="callback-form__title">
+                      Остались вопросы? Напишите нам
+                    </h2>
+                    <img src="img/character_1.png" alt="" />
+                    <div class="social__links">
+                      <a href="#" class="telegram">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="Frame 1">
+                            <path
+                              id="Vector"
+                              d="M1.02438 10.4311L20.5348 3.08985C21.4403 2.77059 22.2312 3.30543 21.9378 4.64169L21.9395 4.64005L18.6175 19.9133C18.3713 20.9961 17.7119 21.2594 16.7895 20.7493L11.7307 17.1107L9.29059 19.4048C9.02079 19.6681 8.79314 19.8902 8.27038 19.8902L8.62957 14.8661L18.0054 6.60001C18.4134 6.24949 17.9143 6.05201 17.3764 6.40089L5.78985 13.5199L0.795043 11.9994C-0.289244 11.6637 -0.312852 10.9412 1.02438 10.4311Z"
+                              fill="#D9E1EC"
+                            />
+                          </g>
+                        </svg>
+                      </a>
+                      <a href="#" class="whatsapp"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M19.7 4.1625C17.6375 2.1 14.8875 1 12 1C5.95 1 1 5.95 1 12C1 13.925 1.55001 15.85 2.51251 17.5L1 23L6.77502 21.4875C8.42502 22.3125 10.2125 22.8625 12 22.8625C18.05 22.8625 23 17.9125 23 11.8625C23 8.975 21.7625 6.225 19.7 4.1625ZM12 21.075C10.35 21.075 8.70001 20.6625 7.32501 19.8375L7.04999 19.7L3.61249 20.6625L4.57501 17.3625L4.29999 16.95C3.33749 15.4375 2.92499 13.7875 2.92499 12.1375C2.92499 7.1875 7.05 3.0625 12 3.0625C14.475 3.0625 16.675 4.025 18.4625 5.675C20.25 7.4625 21.075 9.6625 21.075 12.1375C21.075 16.95 17.0875 21.075 12 21.075ZM16.95 14.2C16.675 14.0625 15.3 13.375 15.025 13.375C14.75 13.2375 14.6125 13.2375 14.475 13.5125C14.3375 13.7875 13.7875 14.3375 13.65 14.6125C13.5125 14.75 13.375 14.75 13.1 14.75C12.825 14.6125 12 14.3375 10.9 13.375C10.075 12.6875 9.52501 11.725 9.38751 11.45C9.25001 11.175 9.38752 11.0375 9.52502 10.9C9.66252 10.7625 9.8 10.625 9.9375 10.4875C10.075 10.35 10.075 10.2125 10.2125 10.075C10.35 9.9375 10.2125 9.8 10.2125 9.6625C10.2125 9.525 9.66251 8.15 9.38751 7.6C9.25001 7.1875 8.97502 7.1875 8.83752 7.1875C8.70002 7.1875 8.56248 7.1875 8.28748 7.1875C8.14998 7.1875 7.87498 7.1875 7.59998 7.4625C7.32498 7.7375 6.63751 8.425 6.63751 9.8C6.63751 11.175 7.59999 12.4125 7.73749 12.6875C7.87499 12.825 9.66248 15.7125 12.4125 16.8125C14.75 17.775 15.1625 17.5 15.7125 17.5C16.2625 17.5 17.3625 16.8125 17.5 16.2625C17.775 15.575 17.775 15.025 17.6375 15.025C17.5 14.3375 17.225 14.3375 16.95 14.2Z"
+                            fill="#D9E1EC"
+                          /></svg
+                      ></a>
+                      <a href="#" class="vk"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="24"
+                          viewBox="0 0 25 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M13.0225 20.5C5.16434 20.5 0.683816 14.8795 0.5 5.51201H4.45205C4.57842 12.3815 7.47353 15.2878 9.77123 15.8883V5.51201H13.482V11.4327C15.7453 11.1805 18.1349 8.47838 18.9391 5.5H22.6384C22.3367 7.04175 21.7342 8.50192 20.8684 9.78927C20.0026 11.0766 18.8921 12.1635 17.6064 12.982C19.0412 13.7285 20.3084 14.7846 21.3243 16.0805C22.3401 17.3763 23.0817 18.8826 23.5 20.5H19.4216C18.5485 17.6537 16.3656 15.444 13.482 15.1437V20.5H13.034H13.0225Z"
+                            fill="#D9E1EC"
+                          /></svg
+                      ></a>
+                    </div>
+                  </div>
+
+                  <div
+                    class="callback__popup__success"
+                    id="faq__callback__success"
+                  >
+                    <div class="callback-close" id="faq_callback_close">
+                      <svg
+                        width="44"
+                        height="44"
+                        viewBox="0 0 44 44"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M31.7313 12.2687C31.373 11.9104 30.7921 11.9104 30.4338 12.2687L22 20.7025L13.5662 12.2687C13.2079 11.9104 12.627 11.9104 12.2687 12.2687C11.9104 12.627 11.9104 13.2079 12.2687 13.5662L20.7025 22L12.2687 30.4338C11.9104 30.7921 11.9104 31.373 12.2687 31.7313C12.627 32.0896 13.2079 32.0896 13.5662 31.7313L22 23.2975L30.4338 31.7313C30.7921 32.0896 31.373 32.0896 31.7313 31.7313C32.0896 31.373 32.0896 30.7921 31.7313 30.4338L23.2975 22L31.7313 13.5662C32.0896 13.2079 32.0896 12.627 31.7313 12.2687Z"
+                          fill="#D9E1EC"
+                        />
+                      </svg>
+                    </div>
+                    <h3 class="yellow">Ваша заявка успешно отправлена!</h3>
+                    <span
+                      >Ваша заявка успешно отправлена. Наши специалисты свяжутся
+                      с Вами в течении 15 минут!</span
+                    >
+                  </div>
+                  <div class="callback-form__content">
+                    <h2 class="callback-form__title">
+                      Остались вопросы? Напишите нам
+                    </h2>
+                    <form action="" method="post">
+                      <div class="callback-form__input">
+                        <input type="text" placeholder="Имя" />
+                      </div>
+
+                      <div class="callback-form__input">
+                        <input type="phone" placeholder="Телефон" />
+                      </div>
+
+                      <span>
+                        Нажимая кнопку вы даете согласие на обработку
+                        <a href="#" class="yellow">персональных данных</a></span
+                      >
+                      <button
+                        class="btn__submit"
+                        type="submit"
+                        id="faq__callback__submit"
+                      >
+                        Перезвонить мне
+                      </button>
+                    </form>
+                    <div class="social__links">
+                      <a href="#" class="telegram">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="Frame 1">
+                            <path
+                              id="Vector"
+                              d="M1.02438 10.4311L20.5348 3.08985C21.4403 2.77059 22.2312 3.30543 21.9378 4.64169L21.9395 4.64005L18.6175 19.9133C18.3713 20.9961 17.7119 21.2594 16.7895 20.7493L11.7307 17.1107L9.29059 19.4048C9.02079 19.6681 8.79314 19.8902 8.27038 19.8902L8.62957 14.8661L18.0054 6.60001C18.4134 6.24949 17.9143 6.05201 17.3764 6.40089L5.78985 13.5199L0.795043 11.9994C-0.289244 11.6637 -0.312852 10.9412 1.02438 10.4311Z"
+                              fill="#D9E1EC"
+                            />
+                          </g>
+                        </svg>
+                      </a>
+                      <a href="#" class="whatsapp"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M19.7 4.1625C17.6375 2.1 14.8875 1 12 1C5.95 1 1 5.95 1 12C1 13.925 1.55001 15.85 2.51251 17.5L1 23L6.77502 21.4875C8.42502 22.3125 10.2125 22.8625 12 22.8625C18.05 22.8625 23 17.9125 23 11.8625C23 8.975 21.7625 6.225 19.7 4.1625ZM12 21.075C10.35 21.075 8.70001 20.6625 7.32501 19.8375L7.04999 19.7L3.61249 20.6625L4.57501 17.3625L4.29999 16.95C3.33749 15.4375 2.92499 13.7875 2.92499 12.1375C2.92499 7.1875 7.05 3.0625 12 3.0625C14.475 3.0625 16.675 4.025 18.4625 5.675C20.25 7.4625 21.075 9.6625 21.075 12.1375C21.075 16.95 17.0875 21.075 12 21.075ZM16.95 14.2C16.675 14.0625 15.3 13.375 15.025 13.375C14.75 13.2375 14.6125 13.2375 14.475 13.5125C14.3375 13.7875 13.7875 14.3375 13.65 14.6125C13.5125 14.75 13.375 14.75 13.1 14.75C12.825 14.6125 12 14.3375 10.9 13.375C10.075 12.6875 9.52501 11.725 9.38751 11.45C9.25001 11.175 9.38752 11.0375 9.52502 10.9C9.66252 10.7625 9.8 10.625 9.9375 10.4875C10.075 10.35 10.075 10.2125 10.2125 10.075C10.35 9.9375 10.2125 9.8 10.2125 9.6625C10.2125 9.525 9.66251 8.15 9.38751 7.6C9.25001 7.1875 8.97502 7.1875 8.83752 7.1875C8.70002 7.1875 8.56248 7.1875 8.28748 7.1875C8.14998 7.1875 7.87498 7.1875 7.59998 7.4625C7.32498 7.7375 6.63751 8.425 6.63751 9.8C6.63751 11.175 7.59999 12.4125 7.73749 12.6875C7.87499 12.825 9.66248 15.7125 12.4125 16.8125C14.75 17.775 15.1625 17.5 15.7125 17.5C16.2625 17.5 17.3625 16.8125 17.5 16.2625C17.775 15.575 17.775 15.025 17.6375 15.025C17.5 14.3375 17.225 14.3375 16.95 14.2Z"
+                            fill="#D9E1EC"
+                          /></svg
+                      ></a>
+                      <a href="#" class="vk"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="24"
+                          viewBox="0 0 25 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M13.0225 20.5C5.16434 20.5 0.683816 14.8795 0.5 5.51201H4.45205C4.57842 12.3815 7.47353 15.2878 9.77123 15.8883V5.51201H13.482V11.4327C15.7453 11.1805 18.1349 8.47838 18.9391 5.5H22.6384C22.3367 7.04175 21.7342 8.50192 20.8684 9.78927C20.0026 11.0766 18.8921 12.1635 17.6064 12.982C19.0412 13.7285 20.3084 14.7846 21.3243 16.0805C22.3401 17.3763 23.0817 18.8826 23.5 20.5H19.4216C18.5485 17.6537 16.3656 15.444 13.482 15.1437V20.5H13.034H13.0225Z"
+                            fill="#D9E1EC"
+                          /></svg
+                      ></a>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="full-width-wrapper">
+        <div class="width-wrapper">
+          <section class="footer__layout">
+            <div class="footer__layout__content">
+              <div class="footer__layout__content__links">
+                <h4>Услуги</h4>
+                <span><a href="#">Грузоперевозки</a></span>
+                <span><a href="#">Автомобили из-за рубежа</a></span>
+                <span><a href="#">Товары из Китая</a></span>
+                <span><a href="#">Международные перевозки</a></span>
+                <span><a href="#">Доставка санкционных товаров</a></span>
+                <span><a href="#">Аутсорсинг ВЭД</a></span>
+              </div>
+              <div class="footer__layout__content__links">
+                <h4>О компании</h4>
+                <span><a href="#">О нас</a></span>
+                <span><a href="#">Сертификаты и лицензии</a></span>
+                <span><a href="#">Калькулятор</a></span>
+                <span><a href="#">Кейсы</a></span>
+                <span><a href="#">Контакты</a></span>
+                <span><a href="#">Гарантии</a></span>
+              </div>
+              <div class="footer__layout__content__address">
+                <div>
+                  <img src="img/location.svg" alt="" />
+                  <span><b>Москва</b>, ул Бутлерова 17, оф. 4015</span>
+                </div>
+                <div>
+                  <img src="img/location.svg" alt="" />
+                  <span><b>Владивосток</b>, ул. Днепровская 27, офис 404</span>
+                </div>
+                <div class="social__links">
+                  <a href="#" class="telegram">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="Frame 1">
+                        <path
+                          id="Vector"
+                          d="M1.02438 10.4311L20.5348 3.08985C21.4403 2.77059 22.2312 3.30543 21.9378 4.64169L21.9395 4.64005L18.6175 19.9133C18.3713 20.9961 17.7119 21.2594 16.7895 20.7493L11.7307 17.1107L9.29059 19.4048C9.02079 19.6681 8.79314 19.8902 8.27038 19.8902L8.62957 14.8661L18.0054 6.60001C18.4134 6.24949 17.9143 6.05201 17.3764 6.40089L5.78985 13.5199L0.795043 11.9994C-0.289244 11.6637 -0.312852 10.9412 1.02438 10.4311Z"
+                          fill="#D9E1EC"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                  <a href="#" class="whatsapp"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M19.7 4.1625C17.6375 2.1 14.8875 1 12 1C5.95 1 1 5.95 1 12C1 13.925 1.55001 15.85 2.51251 17.5L1 23L6.77502 21.4875C8.42502 22.3125 10.2125 22.8625 12 22.8625C18.05 22.8625 23 17.9125 23 11.8625C23 8.975 21.7625 6.225 19.7 4.1625ZM12 21.075C10.35 21.075 8.70001 20.6625 7.32501 19.8375L7.04999 19.7L3.61249 20.6625L4.57501 17.3625L4.29999 16.95C3.33749 15.4375 2.92499 13.7875 2.92499 12.1375C2.92499 7.1875 7.05 3.0625 12 3.0625C14.475 3.0625 16.675 4.025 18.4625 5.675C20.25 7.4625 21.075 9.6625 21.075 12.1375C21.075 16.95 17.0875 21.075 12 21.075ZM16.95 14.2C16.675 14.0625 15.3 13.375 15.025 13.375C14.75 13.2375 14.6125 13.2375 14.475 13.5125C14.3375 13.7875 13.7875 14.3375 13.65 14.6125C13.5125 14.75 13.375 14.75 13.1 14.75C12.825 14.6125 12 14.3375 10.9 13.375C10.075 12.6875 9.52501 11.725 9.38751 11.45C9.25001 11.175 9.38752 11.0375 9.52502 10.9C9.66252 10.7625 9.8 10.625 9.9375 10.4875C10.075 10.35 10.075 10.2125 10.2125 10.075C10.35 9.9375 10.2125 9.8 10.2125 9.6625C10.2125 9.525 9.66251 8.15 9.38751 7.6C9.25001 7.1875 8.97502 7.1875 8.83752 7.1875C8.70002 7.1875 8.56248 7.1875 8.28748 7.1875C8.14998 7.1875 7.87498 7.1875 7.59998 7.4625C7.32498 7.7375 6.63751 8.425 6.63751 9.8C6.63751 11.175 7.59999 12.4125 7.73749 12.6875C7.87499 12.825 9.66248 15.7125 12.4125 16.8125C14.75 17.775 15.1625 17.5 15.7125 17.5C16.2625 17.5 17.3625 16.8125 17.5 16.2625C17.775 15.575 17.775 15.025 17.6375 15.025C17.5 14.3375 17.225 14.3375 16.95 14.2Z"
+                        fill="#D9E1EC"
+                      /></svg
+                  ></a>
+                  <a href="#" class="vk"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M13.0225 20.5C5.16434 20.5 0.683816 14.8795 0.5 5.51201H4.45205C4.57842 12.3815 7.47353 15.2878 9.77123 15.8883V5.51201H13.482V11.4327C15.7453 11.1805 18.1349 8.47838 18.9391 5.5H22.6384C22.3367 7.04175 21.7342 8.50192 20.8684 9.78927C20.0026 11.0766 18.8921 12.1635 17.6064 12.982C19.0412 13.7285 20.3084 14.7846 21.3243 16.0805C22.3401 17.3763 23.0817 18.8826 23.5 20.5H19.4216C18.5485 17.6537 16.3656 15.444 13.482 15.1437V20.5H13.034H13.0225Z"
+                        fill="#D9E1EC"
+                      /></svg
+                  ></a>
+                </div>
+              </div>
+              <div class="footer__layout__content__contacts">
+                <div class="footer__phone">
+                  <img src="img/phone.svg" alt="" />
+                  <span><a href="tel:+74952151610">+7 (495) 215-16-10</a></span>
+                </div>
+                <div class="footer__time">
+                  <img src="img/clock.svg" alt="" />
+                  <div>
+                    <span>Пн - Пт 10:00-19:00 </span>
+                    <span>Сб, Вс - выходной</span>
+                  </div>
+                </div>
+                <div class="footer__mail">
+                  <img src="img/mail.svg" alt="" />
+                  <span
+                    ><a href="mailto:info@vashlogist.net"
+                      >info@vashlogist.net</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="footer__end">
+              <div class="footer__logo">
+                <img src="img/logo.svg" alt="" />
+              </div>
+              <div class="footer__mail">
+                <img src="img/mail.svg" alt="" />
+                <span
+                  ><a href="mailto:info@vashlogist.net"
+                    >info@vashlogist.net</a
+                  ></span
+                >
+              </div>
+              <div class="social__links">
+                <a href="#" class="telegram">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Frame 1">
+                      <path
+                        id="Vector"
+                        d="M1.02438 10.4311L20.5348 3.08985C21.4403 2.77059 22.2312 3.30543 21.9378 4.64169L21.9395 4.64005L18.6175 19.9133C18.3713 20.9961 17.7119 21.2594 16.7895 20.7493L11.7307 17.1107L9.29059 19.4048C9.02079 19.6681 8.79314 19.8902 8.27038 19.8902L8.62957 14.8661L18.0054 6.60001C18.4134 6.24949 17.9143 6.05201 17.3764 6.40089L5.78985 13.5199L0.795043 11.9994C-0.289244 11.6637 -0.312852 10.9412 1.02438 10.4311Z"
+                        fill="#D9E1EC"
+                      />
+                    </g>
+                  </svg>
+                </a>
+                <a href="#" class="whatsapp"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M19.7 4.1625C17.6375 2.1 14.8875 1 12 1C5.95 1 1 5.95 1 12C1 13.925 1.55001 15.85 2.51251 17.5L1 23L6.77502 21.4875C8.42502 22.3125 10.2125 22.8625 12 22.8625C18.05 22.8625 23 17.9125 23 11.8625C23 8.975 21.7625 6.225 19.7 4.1625ZM12 21.075C10.35 21.075 8.70001 20.6625 7.32501 19.8375L7.04999 19.7L3.61249 20.6625L4.57501 17.3625L4.29999 16.95C3.33749 15.4375 2.92499 13.7875 2.92499 12.1375C2.92499 7.1875 7.05 3.0625 12 3.0625C14.475 3.0625 16.675 4.025 18.4625 5.675C20.25 7.4625 21.075 9.6625 21.075 12.1375C21.075 16.95 17.0875 21.075 12 21.075ZM16.95 14.2C16.675 14.0625 15.3 13.375 15.025 13.375C14.75 13.2375 14.6125 13.2375 14.475 13.5125C14.3375 13.7875 13.7875 14.3375 13.65 14.6125C13.5125 14.75 13.375 14.75 13.1 14.75C12.825 14.6125 12 14.3375 10.9 13.375C10.075 12.6875 9.52501 11.725 9.38751 11.45C9.25001 11.175 9.38752 11.0375 9.52502 10.9C9.66252 10.7625 9.8 10.625 9.9375 10.4875C10.075 10.35 10.075 10.2125 10.2125 10.075C10.35 9.9375 10.2125 9.8 10.2125 9.6625C10.2125 9.525 9.66251 8.15 9.38751 7.6C9.25001 7.1875 8.97502 7.1875 8.83752 7.1875C8.70002 7.1875 8.56248 7.1875 8.28748 7.1875C8.14998 7.1875 7.87498 7.1875 7.59998 7.4625C7.32498 7.7375 6.63751 8.425 6.63751 9.8C6.63751 11.175 7.59999 12.4125 7.73749 12.6875C7.87499 12.825 9.66248 15.7125 12.4125 16.8125C14.75 17.775 15.1625 17.5 15.7125 17.5C16.2625 17.5 17.3625 16.8125 17.5 16.2625C17.775 15.575 17.775 15.025 17.6375 15.025C17.5 14.3375 17.225 14.3375 16.95 14.2Z"
+                      fill="#D9E1EC"
+                    /></svg
+                ></a>
+                <a href="#" class="vk"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.0225 20.5C5.16434 20.5 0.683816 14.8795 0.5 5.51201H4.45205C4.57842 12.3815 7.47353 15.2878 9.77123 15.8883V5.51201H13.482V11.4327C15.7453 11.1805 18.1349 8.47838 18.9391 5.5H22.6384C22.3367 7.04175 21.7342 8.50192 20.8684 9.78927C20.0026 11.0766 18.8921 12.1635 17.6064 12.982C19.0412 13.7285 20.3084 14.7846 21.3243 16.0805C22.3401 17.3763 23.0817 18.8826 23.5 20.5H19.4216C18.5485 17.6537 16.3656 15.444 13.482 15.1437V20.5H13.034H13.0225Z"
+                      fill="#D9E1EC"
+                    /></svg
+                ></a>
+              </div>
+
+              <span>© ВАШ ЛОГИСТ 2023 год</span>
+              <span> <a href="#">Пресс-служба</a></span>
+              <span
+                ><a href="#">Согласие на обработку персональных данных</a></span
+              >
+            </div>
+          </section>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
